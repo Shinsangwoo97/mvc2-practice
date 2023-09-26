@@ -4,9 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="240ee671-2e0f-461e-82ca-07bc37f5642a" name="Changes" comment="톰캣 실행 완료">
+    <list default="true" id="240ee671-2e0f-461e-82ca-07bc37f5642a" name="Changes" comment="1. Build and run using - IntelliJ IDEA 로변경후 &#10;2. 프로젝트명/webapps/WEB-INF/classes 폴더 생성&#10;3. .File-Project Structure - Project Settings - Modules 항목에서&#10;   =프로젝트명 클릭 -&gt; path 탭 이동 -&gt; use module output path 선택 &#10;   폴더명\webapps\WEB-INF\classes 로변경 test도 변경&#10;톰캣 실행 완료">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/mvc2_practice_main_Web_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/mvc2_practice_test_Web_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/DispatcherServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/RequestMappingHandlerMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapps/home.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/WebApplicationServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/WebApplicationServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapps/WEB-INF/classes/org/example/WebApplicationServer.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +41,14 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -37,7 +56,9 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2VvRM39gWhKGswDNIkv7vnxEpRA" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -47,6 +68,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/ssw25/spring boot/mvc2-practice",
@@ -54,13 +76,20 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ssw25\spring boot\mvc2-practice\webapps" />
+      <recent name="C:\Users\ssw25\spring boot\mvc2-practice\webapps\WEB-INF" />
+      <recent name="C:\Users\ssw25\spring boot\mvc2-practice\webapps\WEB-INF\classes" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="WebApplicationServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.WebApplicationServer" />
@@ -90,7 +119,7 @@
       <option name="presentableId" value="Default" />
       <updated>1695714519594</updated>
       <workItem from="1695714520668" duration="2388000" />
-      <workItem from="1695717364738" duration="732000" />
+      <workItem from="1695717364738" duration="8080000" />
     </task>
     <task id="LOCAL-00001" summary="톰캣 실행 완료">
       <option name="closed" value="true" />
@@ -100,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695715286567</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1. Build and run using - IntelliJ IDEA 로변경후 &#10;2. 프로젝트명/webapps/WEB-INF/classes 폴더 생성&#10;3. .File-Project Structure - Project Settings - Modules 항목에서&#10;   =프로젝트명 클릭 -&gt; path 탭 이동 -&gt; use module output path 선택 &#10;   폴더명\webapps\WEB-INF\classes 로변경 test도 변경&#10;톰캣 실행 완료">
+      <option name="closed" value="true" />
+      <created>1695718456165</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695718456165</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,6 +145,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="톰캣 실행 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="톰캣 실행 완료" />
+    <MESSAGE value="1. Build and run using - IntelliJ IDEA 로변경후 &#10;2. 프로젝트명/webapps/WEB-INF/classes 폴더 생성&#10;3. .File-Project Structure - Project Settings - Modules 항목에서&#10;   =프로젝트명 클릭 -&gt; path 탭 이동 -&gt; use module output path 선택 &#10;   폴더명\webapps\WEB-INF\classes 로변경 test도 변경&#10;톰캣 실행 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. Build and run using - IntelliJ IDEA 로변경후 &#10;2. 프로젝트명/webapps/WEB-INF/classes 폴더 생성&#10;3. .File-Project Structure - Project Settings - Modules 항목에서&#10;   =프로젝트명 클릭 -&gt; path 탭 이동 -&gt; use module output path 선택 &#10;   폴더명\webapps\WEB-INF\classes 로변경 test도 변경&#10;톰캣 실행 완료" />
   </component>
 </project>
