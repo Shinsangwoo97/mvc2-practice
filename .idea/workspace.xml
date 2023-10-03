@@ -4,20 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="240ee671-2e0f-461e-82ca-07bc37f5642a" name="Changes" comment="1. Build and run using - IntelliJ IDEA 로변경후 &#10;2. 프로젝트명/webapps/WEB-INF/classes 폴더 생성&#10;3. .File-Project Structure - Project Settings - Modules 항목에서&#10;   =프로젝트명 클릭 -&gt; path 탭 이동 -&gt; use module output path 선택 &#10;   폴더명\webapps\WEB-INF\classes 로변경 test도 변경&#10;톰캣 실행 완료">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/mvc2_practice_main_Web_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/mvc2_practice_test_Web_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/DispatcherServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/RequestMappingHandlerMapping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/controller/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapps/home.jsp" afterDir="false" />
+    <list default="true" id="240ee671-2e0f-461e-82ca-07bc37f5642a" name="Changes" comment="프런트 컨트롤러 실습">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/HandlerKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/View/JspView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/View/JspViewResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/View/RedirectView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/View/View.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/View/ViewResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/controller/ForwardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/controller/RequestMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/controller/UserCreateController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/controller/UserListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapps/user/form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapps/user/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapps/WEB-INF/classes/org/example/WebApplicationServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvc/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/DispatcherServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvc/RequestMappingHandlerMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/RequestMappingHandlerMapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mvc/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mvc/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapps/WEB-INF/classes/org/example/mvc/DispatcherServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/webapps/WEB-INF/classes/org/example/mvc/DispatcherServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapps/WEB-INF/classes/org/example/mvc/RequestMappingHandlerMapping.class" beforeDir="false" afterPath="$PROJECT_DIR$/webapps/WEB-INF/classes/org/example/mvc/RequestMappingHandlerMapping.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,26 +72,29 @@
     <option name="showLibraryContents" value="true" />
     <option name="showScratchesAndConsoles" value="false" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/ssw25/spring boot/mvc2-practice",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ssw25/spring boot/mvc2-practice&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example.mvc.controller" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ssw25\spring boot\mvc2-practice\webapps" />
       <recent name="C:\Users\ssw25\spring boot\mvc2-practice\webapps\WEB-INF" />
@@ -119,7 +130,11 @@
       <option name="presentableId" value="Default" />
       <updated>1695714519594</updated>
       <workItem from="1695714520668" duration="2388000" />
-      <workItem from="1695717364738" duration="8080000" />
+      <workItem from="1695717364738" duration="12476000" />
+      <workItem from="1696062858331" duration="602000" />
+      <workItem from="1696068837219" duration="1222000" />
+      <workItem from="1696254408672" duration="3000" />
+      <workItem from="1696294303854" duration="4322000" />
     </task>
     <task id="LOCAL-00001" summary="톰캣 실행 완료">
       <option name="closed" value="true" />
@@ -137,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695718456165</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="프런트 컨트롤러 실습">
+      <option name="closed" value="true" />
+      <created>1695765533931</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695765533931</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +169,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="톰캣 실행 완료" />
     <MESSAGE value="1. Build and run using - IntelliJ IDEA 로변경후 &#10;2. 프로젝트명/webapps/WEB-INF/classes 폴더 생성&#10;3. .File-Project Structure - Project Settings - Modules 항목에서&#10;   =프로젝트명 클릭 -&gt; path 탭 이동 -&gt; use module output path 선택 &#10;   폴더명\webapps\WEB-INF\classes 로변경 test도 변경&#10;톰캣 실행 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. Build and run using - IntelliJ IDEA 로변경후 &#10;2. 프로젝트명/webapps/WEB-INF/classes 폴더 생성&#10;3. .File-Project Structure - Project Settings - Modules 항목에서&#10;   =프로젝트명 클릭 -&gt; path 탭 이동 -&gt; use module output path 선택 &#10;   폴더명\webapps\WEB-INF\classes 로변경 test도 변경&#10;톰캣 실행 완료" />
+    <MESSAGE value="프런트 컨트롤러 실습" />
+    <option name="LAST_COMMIT_MESSAGE" value="프런트 컨트롤러 실습" />
   </component>
 </project>
