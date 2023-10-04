@@ -1,6 +1,7 @@
 package org.example.mvc;
 
 import org.example.mvc.View.JspViewResolver;
+import org.example.mvc.View.ModelAndView;
 import org.example.mvc.View.View;
 import org.example.mvc.View.ViewResolver;
 import org.example.mvc.controller.Controller;
@@ -22,12 +23,14 @@ import java.util.List;
 public class DispatcherServlet extends HttpServlet {
     private static final Logger log = LoggerFactory.getLogger(DispatcherServlet.class);
     private RequestMappingHandlerMapping requestMappingHandlerMapping;
+    private List<HandlerAdapter> handlerAdapters;
     private List<ViewResolver> viewResolvers;
     @Override
     public void init() throws ServletException{
         requestMappingHandlerMapping = new RequestMappingHandlerMapping();
         requestMappingHandlerMapping.init();
 
+        handlerAdapters = List.of(new SimpleContollerHandlerAdapter());
         viewResolvers = Collections.singletonList(new JspViewResolver());
     }
     @Override
@@ -36,12 +39,17 @@ public class DispatcherServlet extends HttpServlet {
 
         try {
             Controller handler = requestMappingHandlerMapping.findHandler(new HandlerKey(RequestMethod.valueOf(request.getMethod()), request.getRequestURI()));
-            // "redirect:/users"
-            String viewName = handler.handleRequest(request, response);
+
+            HandlerAdapter handlerAdapter = handlerAdapters.stream()
+                    .filter(ha -> ha.supports(handler))
+                    .findFirst()
+                    .orElseThrow(() -> new ServletException("No adapter for handler [" + handler + "]"));
+
+            ModelAndView modelAndView = handlerAdapter.handle(request, response, handler);
 
             for (ViewResolver viewResolver : viewResolvers) {
-                View view = viewResolver.resolveView(viewName);
-                view.render(new HashMap<>(), request, response);
+                View view = viewResolver.resolveView(modelAndView.getViewName());
+                view.render(modelAndView.getModel(), request, response);
             }
 
         } catch (Exception e) {
